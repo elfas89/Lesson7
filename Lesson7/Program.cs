@@ -74,26 +74,27 @@ namespace Lesson7
                 //(данный пункт необходимо реализовать 3 способами).
 
                     //one
-                    //Animal cat = a as Cat;
-                    //if (cat != null) {
-                    //    ((Cat)a).Purr();
-                    //}
+                      //Animal cat = a as Cat;
+                      //if (cat != null)
+                      //{
+                      //    ((Cat)a).Purr();
+                      //}
 
                     //two
-                    //if (a is Cat) {
-                    //    ((Cat)a).Purr();
-                    //}
+                      //if (a is Cat)
+                      //{
+                      //    ((Cat)a).Purr();
+                      //}
  
                     //three
-                    // оно ваще скомпилится?? студия?
-                    //try
-                    //{
-                    //    Animal cat = (Cat)a;
-                    //    cat.Purr();
-                    //}
-                    //catch (InvalidCastException ex) {
-                    //    Console.WriteLine(ex.Message);
-                    //}
+                      try
+                      {
+                          ((Cat)a).Purr();
+                      }
+                      catch (InvalidCastException ex)
+                      {
+                          Console.WriteLine(ex.Message);
+                      }
                   
     
                   }

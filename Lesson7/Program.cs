@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestNamespace;
 
 namespace Lesson7
 {
@@ -55,17 +56,16 @@ namespace Lesson7
             //finally{}
 
             //3
+            //Animal[] arrAnimal = new Animal[6];
 
-            Animal[] arrAnimal = new Animal[6];
-
-            arrAnimal[0] = new Dog { Name = "Шарик" };
-            arrAnimal[1] = new Cat { Name = "Кусака" };
-            arrAnimal[2] = new Cat { Name = "Ленивец" };
-            arrAnimal[3] = new Dog { Name = "Джек" };
-            arrAnimal[4] = new Cat { Name = "Черныш" };
-            arrAnimal[5] = new Dog { Name = "Арчи" };
-            foreach(Animal a in arrAnimal)
-                  {
+            //arrAnimal[0] = new Dog { Name = "Шарик" };
+            //arrAnimal[1] = new Cat { Name = "Кусака" };
+            //arrAnimal[2] = new Cat { Name = "Ленивец" };
+            //arrAnimal[3] = new Dog { Name = "Джек" };
+            //arrAnimal[4] = new Cat { Name = "Черныш" };
+            //arrAnimal[5] = new Dog { Name = "Арчи" };
+            //foreach(Animal a in arrAnimal)
+               //   {
                 // Вызывает метод Bite у всех объектов в массиве arrAnimal
                      // a.Bite();
 
@@ -87,19 +87,40 @@ namespace Lesson7
                       //}
  
                     //three
-                      try
-                      {
-                          ((Cat)a).Purr();
-                      }
-                      catch (InvalidCastException ex)
-                      {
-                          Console.WriteLine(ex.Message);
-                      }
+                      //try
+                      //{
+                      //    ((Cat)a).Purr();
+                      //}
+                      //catch (InvalidCastException ex)
+                      //{
+                      //    Console.WriteLine(ex.Message);
+                      //}
                   
-    
-                  }
+                 // }
 
             //4
+           //Library lib = new Library(3);
+           //lib[0] = new Book("Книга №1");
+           //lib[1] = new Book("Книга №2");
+           //lib[2] = new Book("Книга №3");
+           //Console.WriteLine(lib[0].Name);
+
+            //?
+
+
+            //5
+            //var sex = new { Sex = "male"};
+            //var person = new {Name = "Andy", Age = 26, Sex = sex };
+
+            //Console.WriteLine(person.Name + " " + person.Age + " " + person.Sex);
+
+
+            //6
+            //TestNamespace.TestClass test = new TestNamespace.TestClass("Hi!");
+            //Console.WriteLine(test.Name);
+
+            //TestClass test = new TestClass("Hi with using!");
+            //Console.WriteLine(test.Name);
 
         }
     }
